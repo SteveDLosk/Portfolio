@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>RPG Dice Pro</title>
+
+</head>
+
+<body>
+  <div id="MainPicture">
+    <img src="./Images/RPGPro/Splash.png" alt="An image of the main splash page of the app" />
+    <h1>RPG Dice Pro</h1>
+  </div>
+
+  <div id="Description">
+    <p>I decided to build a dice-rolling application for the Universal Windows Platform (UWP).  I needed a project of my own to practice the XAML skills I was learning, and wanted to create an app that was something I would use, and be proud of.  </p>
+    <p>RPG Dice Pro is the result of my work.  It is an app for rolling dice for table-top role playing games, such as Dungeons and Dragons, or Pathfinder.  Looking at what other apps were available in the market (Windows store, Google Play store, and Apple’s App store), I decided to add features that were noticeably absent from other similar apps.</p>
+    <p>First, in these games, the twenty-sided die is used for the vast majority of rolls.  I felt it was deserving of its own page in the app, where the user could tap the image while only paying half attention to the app, as opposed to having to pay full attention to select the correct image from a page of all the prevalent dice options.</p>
+    <p>Second, creating a character in these games can be a time-consuming process, involving rolling many multiples of dice, and some roll comparisons to remove lower scores.  To simplify this process, I combined all this logic into a single method, invoked with a single button press.  This makes creating a new character for these games significantly faster.</p>
+    <p>Third, I added a complex page, for handling arithmetically complex rolls.  In these games, some rolls are a simple roll of a die, such as “roll and eight-sided die”, but some are more complex, such as “roll 4 six sided dice, sum their totals, and subtract 3 from the total”.  To simplify these rolls, I made a complex page, where the user can input standard notation for the game for this roll (in this case, ‘4d6-3’), and get the result in a single button press.</p>
+    <p>For a pleasant experience, I added some fantasy themed images, and authentic rolling sounds of these dice to the app.  I also added a feature with excited and depressed reaction sounds to exceptionally good or bad rolls.</p>
+    <p>RPG Dice Pro is currently available on the Windows Store.  I am contemplating porting its code to a Xamarin Forms app, and making it available on Android and iOS as well. </p>
+    <div>
+      <img src="./Images/RPGPro/D20.png" alt="An image of the 'D20' page, a large 20 sided die, and a result.  There is also a dragon flying in the background." />
+      <img src="./Images/RPGPro/Complex.png" alt="An image of the 'Complex' page.  There are fields to put in user-specified formulas, and roll buttons to generate the random result." />
+      <img src="./Images/RPGPro/NavPane.png" alt="An image of the application with the nav pane open.  It shows options for each page in the app." />
+    </div>
+    <p>RPG Dice Pro is written in C# and XAML.  The User Interface (UI) is coded in XAML, and includes hamburger navigation to move between five main pages: D20 (the simple, just roll the main die page), Dice Bag (options for 7 different dice and a coin flip), Complex (which allows combining dice rolls together with addition or subtraction), Character (which quickly generates scores for a new character, a time consuming process to do with real dice), and Settings (with toggle switches to control sound options).</p>
+    <p>The C# code behind generates random numbers, selects sound to play based on dice roll result and configured settings, opens/closes the navigation pane, handles button press events, parses user input formulas, and formats output according to user preferences.</p>
+  </div>
+  
+  <a href="">A link to the code</a>
+
+</body>
+</html>
